@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*
+Cores->
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{ /*variaveis css*/
+    --cor0: #c5ebd6;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+    
+    /*Fontes*/
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'android', Arial, sans-serif;
+
+}
+*{
+    margin: 0px; /*essa cofiguraçao global tirou margem e padding de todos os elementos ficou tudo grudado*/
+    padding: 0px; /*essa configuraçao foi importante para tirar a margem padrao desnecessaria
+    depois vamos configurar margem por margem
+    */
+}
+main p{
+    margin: 15px 0px 15px 0px; /* cima-15px direira-0px baixo-15px esquerda-0px*/
+    text-align: justify;
+    text-indent: 30px; /* recuo do primeiro paragrafo do texto */
+    line-height: 2em; /* altura das linhas */
+    font-size: 1em;
+}
+main strong{
+    color: var(--cor04);
+    font-weight: bold;
+    padding: 2px 6px; /* acolchoamento dentro da tag strong */
+
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-color: var(--cor04);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor04));
+    
+}
+header h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+
+ 
+}
+main h1{
+    color: var(--cor05);
+    font-family: var(--fonte-android);
+}
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor04);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor01), transparent); /* degrade da cor 1 ate transparente */
+    padding-left: 4px;
+}
+main{
+   background-color: white;
+   min-width: 300px; /* nao pode ser menor que isso*/
+   max-width: 1000px; /*nao vai ultrapassar esse tamanho*/
+   margin: auto;
+   padding: 20px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.375);
+   margin-bottom: 30px;
+   border-radius: 0px 0px 5px 5px;  
+   
+}
+header > p{
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-padrao);
+    max-width: 600px;
+    margin: auto; /* margin auto porque ao definir o max width transforma o p em um bloco*/
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+
+}
+nav{
+   
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.399);
+    background-color: var(--cor04);
+
+}
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+    font-size: 0.8;
+    padding: 5px;
+}
+main img{
+    width: 100%; /* imagens ocupam 100% da largura da tela */
+}
+.pq{
+    display: block; /*por padrao uma img é um block-level entao nao podemos usar margem por isso usamos display block*/
+    margin: auto;
+    max-width: 350px;
+}
+nav a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    font-weight: bold;
+    transition-duration: 1s; /* transiçao de 1 segundo para ficar branco */
+}
+nav > a:hover{
+    background-color: var(--cor02);
+    color: var(--cor05);
+}
+main a{
+    background-color: var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor05);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor04);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.264);
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+}
+footer a:hover{
+    background-color: var(--cor02);
+    transition-duration:  1s;
+    
+}
+aside{
+    background-color: var(--cor01);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.319);
+
+}
+aside > ul{
+    list-style-position: inside; /* normalmente a bola da lista é para fora, essa configuraçao deixa para dentro */
+    columns: 2; /* dividiu em 2 colunas */
+    
+}
+aside > h3{
+    background-color: var(--cor04);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5.5px 5.5px 0px 0px;
+
+}
+/* video responsivo */
+div.video{
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin: 0 -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+    background-color: #1a5c37;
+    margin-bottom: 50px;
+
+
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+
+}
+abbr{
+    text-decoration: none;
+    
+}
