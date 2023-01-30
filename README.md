@@ -1,2 +1,2 @@
 # android
- primeiro projeto
+ primeiro projeto, rumo a evolução.
