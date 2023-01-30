@@ -38,7 +38,7 @@ Cores->
 main p{
     margin: 15px 0px 15px 0px; /* cima-15px direira-0px baixo-15px esquerda-0px*/
     text-align: justify;
-    text-indent: 30px; /* recuo do primeiro paragrafo do texto */
+    text-indent: 31px; /* recuo do primeiro paragrafo do texto */
     line-height: 2em; /* altura das linhas */
     font-size: 1em;
 }
